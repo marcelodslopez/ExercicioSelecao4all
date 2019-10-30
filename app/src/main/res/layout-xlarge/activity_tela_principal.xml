@@ -92,17 +92,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <LinearLayout
+                <RelativeLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginBottom="45dp">
+                    android:layout_marginBottom="30dp">
 
-                    <ProgressBar
+
+                    <com.agrawalsuneet.dotsloader.loaders.TrailingCircularDotsLoader
+                        android:layout_centerInParent="true"
                         android:id="@+id/tela_principal_pb_principal"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        />
+                        app:trailingcircular_animDelay="200"
+                        app:trailingcircular_animDuration="1200"
+                        app:trailingcircular_bigCircleRadius="100dp"
+                        app:trailingcircular_dotsColor="@color/colorPrimary"
+                        app:trailingcircular_dotsRadius="20dp"
+                        app:trailingcircular_noOfTrailingDots="5" />
 
                     <ImageView
                         android:id="@+id/tela_principal_imagemPrincipal"
@@ -110,7 +117,7 @@
                         android:layout_height="match_parent"
                         />
 
-                </LinearLayout>
+                </RelativeLayout>
 
                 <FrameLayout
                     android:layout_marginBottom="5dp"
@@ -120,11 +127,17 @@
                     android:background="@drawable/img"
                     android:layout_gravity="right|bottom">
 
-                    <ProgressBar
+                    <com.agrawalsuneet.dotsloader.loaders.TrailingCircularDotsLoader
+                        android:layout_centerInParent="true"
                         android:id="@+id/tela_principal_pb_logo"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        />
+                        app:trailingcircular_animDelay="200"
+                        app:trailingcircular_animDuration="1200"
+                        app:trailingcircular_bigCircleRadius="50dp"
+                        app:trailingcircular_dotsColor="@color/colorPrimary"
+                        app:trailingcircular_dotsRadius="13dp"
+                        app:trailingcircular_noOfTrailingDots="5" />
 
                     <ImageView
                         android:layout_gravity="center"

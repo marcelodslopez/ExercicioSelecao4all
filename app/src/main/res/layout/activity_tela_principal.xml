@@ -114,12 +114,6 @@
                         app:trailingcircular_dotsRadius="11dp"
                         app:trailingcircular_noOfTrailingDots="5" />
 
-<!--                    <ProgressBar-->
-<!--                        android:id="@+id/tela_principal_pb_principal"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        />-->
-
                     <ImageView
                         android:id="@+id/tela_principal_imagemPrincipal"
                         android:layout_width="match_parent"

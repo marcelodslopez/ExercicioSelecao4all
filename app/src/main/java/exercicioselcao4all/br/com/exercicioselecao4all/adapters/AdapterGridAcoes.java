@@ -7,7 +7,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
 import java.util.List;
+
 import exercicioselcao4all.br.com.exercicioselecao4all.R;
 
 /**

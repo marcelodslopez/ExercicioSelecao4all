@@ -7,8 +7,6 @@ import android.os.Handler;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.AdapterView;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,9 +24,9 @@ import java.util.List;
 
 import exercicioselcao4all.br.com.exercicioselecao4all.R;
 import exercicioselcao4all.br.com.exercicioselecao4all.adapters.AdapterLista;
-import exercicioselcao4all.br.com.exercicioselecao4all.ws.Tarefa_WS;
 import exercicioselcao4all.br.com.exercicioselecao4all.model.Tarefa;
 import exercicioselcao4all.br.com.exercicioselecao4all.ui.principal.TelaPrincipal;
+import exercicioselcao4all.br.com.exercicioselecao4all.ws.Tarefa_WS;
 
 
 public class Tela_lista extends AppCompatActivity {

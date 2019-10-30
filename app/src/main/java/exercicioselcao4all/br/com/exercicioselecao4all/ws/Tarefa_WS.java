@@ -1,13 +1,14 @@
 package exercicioselcao4all.br.com.exercicioselecao4all.ws;
 
 import android.util.Log;
+
 import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import exercicioselcao4all.br.com.exercicioselecao4all.model.response.ResponseTarefa;
 import exercicioselcao4all.br.com.exercicioselecao4all.model.Tarefa;
+import exercicioselcao4all.br.com.exercicioselecao4all.model.response.ResponseTarefa;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
