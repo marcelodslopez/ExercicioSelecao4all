@@ -1,0 +1,120 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:5531303778735232401",
+      "lastPropertyId": "8:2699318639489559023",
+      "name": "Comentario",
+      "properties": [
+        {
+          "id": "1:5600197766376333160",
+          "name": "urlFoto"
+        },
+        {
+          "id": "2:559476201433779737",
+          "name": "nome"
+        },
+        {
+          "id": "3:2867960071117153",
+          "name": "nota"
+        },
+        {
+          "id": "4:6084528748822357027",
+          "name": "titulo"
+        },
+        {
+          "id": "5:7063125847096207161",
+          "name": "comentario"
+        },
+        {
+          "id": "6:7264481047537428990",
+          "name": "id"
+        },
+        {
+          "id": "7:7726207519170502634",
+          "name": "id_tarefa"
+        },
+        {
+          "id": "8:2699318639489559023",
+          "indexId": "1:1244689290292950666",
+          "name": "tarefaId"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:5776934938973214233",
+      "lastPropertyId": "12:4216154638835774060",
+      "name": "Tarefa",
+      "properties": [
+        {
+          "id": "1:9145234934695355805",
+          "name": "id"
+        },
+        {
+          "id": "2:861980382484846027",
+          "name": "cidade"
+        },
+        {
+          "id": "3:7122046836469805825",
+          "name": "bairro"
+        },
+        {
+          "id": "4:2009006266324198779",
+          "name": "urlFoto"
+        },
+        {
+          "id": "5:287840041425128633",
+          "name": "urlLogo"
+        },
+        {
+          "id": "6:3385120344863925253",
+          "name": "titulo"
+        },
+        {
+          "id": "7:7253180267836491991",
+          "name": "telefone"
+        },
+        {
+          "id": "8:326436971287102530",
+          "name": "texto"
+        },
+        {
+          "id": "9:6481803259600560130",
+          "name": "endereco"
+        },
+        {
+          "id": "10:6730934104619295564",
+          "name": "latitude"
+        },
+        {
+          "id": "11:3700779116147758374",
+          "name": "longitude"
+        },
+        {
+          "id": "12:4216154638835774060",
+          "name": "index"
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:7117802075145896501",
+          "name": "comentarios"
+        }
+      ]
+    }
+  ],
+  "lastEntityId": "2:5776934938973214233",
+  "lastIndexId": "1:1244689290292950666",
+  "lastRelationId": "1:7117802075145896501",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Exercicio Selecao 4all</string>
+    <string name="action_settings">Settings</string>
+    <string name="aguarde">Aguarde o carregamento</string>
+
+    <string name="titulo_lista">Lista de tarefas</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="texto_dialog_permissao">Você denegou a permissão para realizar chamadas, deseja permitir?</string>
+    <string name="texto_persmissao_negada">Permissão negada pelo usuário para fazer a ligação</string>
+
+    <string name="endereco">Endereço: </string>
+    <string name="aguarde_carregamento">Aguarde o carregamento.
+Obrigado</string>
+    <string name="erro_montar_tarefa">Ocorreu um erro ao montar o objeto Tarefa</string>
+    <string name="erro_montar_webservice">Não foi possível encontrar dados no webSerice</string>
+    <string name="aviso_sair">Pressione novamente voltar para sair</string>
+    <string name="aviso_permissao_config">Como você denegou a permissão e marcou a opção "não me pergunte novamente, agora para permitir a realização de chamadas você deve ir em:
+    Configurações -> Apps -> Exercicio Selecao 4all -> Permissões -> Telefone e marque permitir. </string>
+    <string name="aviso_permissao_denegada">Este aplicativo precisa da sua permissão para realizar a chamada, você a negou, por favor na próxima tentativa, marque permitir.
+    \nDeseja tentar novamente?</string>
+
+</resources>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:theme="@style/AppTheme"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.principal.TelaPrincipal">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_principal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_size"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/toolbar_back"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/ic_back"
+                    android:layout_gravity="center"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true" />
+
+
+                <RelativeLayout
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/mark"
+                        android:layout_centerInParent="true"
+                        android:background="@mipmap/ic_mark_white"
+                        android:layout_gravity="center"
+                        android:layout_width="35dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <TextView
+                        style="@style/titulo_toolbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Toolbar Title"
+                        android:id="@+id/toolbar_title"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/mark"
+                        android:layout_toEndOf="@+id/mark" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/toolbar_search"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/ic_search"
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true" />
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+            android:background="@color/fundo"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_weight="1.6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="30dp">
+
+
+                    <com.agrawalsuneet.dotsloader.loaders.TrailingCircularDotsLoader
+                        android:layout_centerInParent="true"
+                        android:id="@+id/tela_principal_pb_principal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:trailingcircular_animDelay="200"
+                        app:trailingcircular_animDuration="1200"
+                        app:trailingcircular_bigCircleRadius="40dp"
+                        app:trailingcircular_dotsColor="@color/colorPrimary"
+                        app:trailingcircular_dotsRadius="11dp"
+                        app:trailingcircular_noOfTrailingDots="5" />
+
+<!--                    <ProgressBar-->
+<!--                        android:id="@+id/tela_principal_pb_principal"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        />-->
+
+                    <ImageView
+                        android:id="@+id/tela_principal_imagemPrincipal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/tela_principal_titulo"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:text="Titulo"
+                    style="@style/titulo"
+                    android:layout_marginRight="80dp"
+                    android:layout_gravity="right|bottom"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:layout_marginRight="20dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/img"
+                    android:layout_gravity="right|bottom">
+
+                    <com.agrawalsuneet.dotsloader.loaders.TrailingCircularDotsLoader
+                        android:layout_centerInParent="true"
+                        android:id="@+id/tela_principal_pb_logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:trailingcircular_animDelay="200"
+                        app:trailingcircular_animDuration="1200"
+                        app:trailingcircular_bigCircleRadius="25dp"
+                        app:trailingcircular_dotsColor="@color/colorPrimary"
+                        app:trailingcircular_dotsRadius="3dp"
+                        app:trailingcircular_noOfTrailingDots="5" />
+
+<!--                    -->
+<!--                    <ProgressBar-->
+<!--                        android:id="@+id/tela_principal_pb_logo"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        />-->
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@+id/tela_principal_logo"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        />
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+
+            <ScrollView
+                android:scrollbarStyle="outsideInset"
+                android:id="@+id/tela_principal_scroll"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:background="@color/branco"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <GridView
+                            android:id="@+id/tela_principal_grid_botoes"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:columnWidth="60dp"
+                            android:numColumns="5"
+                            android:stretchMode="spacingWidthUniform"
+                            android:gravity="center"
+
+                            ></GridView>
+
+
+                        <LinearLayout
+                            android:background="@color/cinza"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            />
+
+                        <TextView
+                            android:text="\n\n\n\n\n\n"
+                            style="@style/titulo"
+                            android:textSize="10sp"
+                            android:id="@+id/tela_principal_texto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        <FrameLayout
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="15dp">
+
+                                <fragment
+                                    android:id="@+id/map"
+                                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="105dp"/>
+
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/tela_principal_endereco"
+                                android:textColor="@color/branco"
+                                android:text="Endereço"
+                                android:textSize="12sp"
+                                android:layout_marginRight="50dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|bottom"/>
+
+                            <FrameLayout
+                                android:layout_marginRight="5dp"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/img"
+                                android:layout_gravity="right|bottom">
+
+
+                                <ImageView
+                                    android:background="@mipmap/ic_mark"
+                                    android:layout_gravity="center"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    />
+
+                            </FrameLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/ll_comentarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <!--<ListView-->
+                            <!--android:id="@+id/tela_principal_listaComentarios"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"></ListView>-->
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>

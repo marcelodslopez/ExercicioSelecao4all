@@ -1,0 +1,64 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="2dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_height="100dp">
+
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardElevation="10dp"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="4dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackgroudCard"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:background="@color/cinza_escuro_opacity"
+                android:layout_width="match_parent"
+                android:layout_marginRight="50dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/adapter_list_texto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Desc"
+                    android:layout_marginLeft="5dp"
+                    style="@style/titulo"
+                    android:textSize="30sp"
+                    android:textColor="@color/branco"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/adapter_list_imagem"
+                android:background="@android:drawable/ic_dialog_info"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"
+                android:scaleType="fitXY"
+                />
+
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
