@@ -234,7 +234,6 @@ public class TelaPrincipal extends AppCompatActivity implements OnMapReadyCallba
         toolbar_back= (ImageView) toolbar.findViewById(R.id.toolbar_back);
         toolbar_search= (ImageView) toolbar.findViewById(R.id.toolbar_search);
 
-
         adapterGridAcoes = new AdapterGridAcoes(getBaseContext());
         //Monta a lista de ações
         listaAcoes.add("ligar");
